@@ -1,4 +1,4 @@
-# Taivivu Frontend
+# React Scss
 
 ### Rules
 - Phần components nằm trong thư mục `app`, mỗi page sẽ có 1 folder riêng.
