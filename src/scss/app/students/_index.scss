@@ -1,8 +1,13 @@
-.StudentsPage{
+body{
     background-color: #f2f2f2;
-    padding: 10px;
-    padding-bottom: 40px;
-    min-height: 850px;
+}
+
+.StudentsPage{
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
 
     .Title{
         text-align: center;
@@ -21,11 +26,11 @@
             align-items: flex-end;
 
             a {
-                background: #4d88ff;
+                background: #00aaff;
                 border-radius: 4px;
-                font-size: 14px;
+                font-size: 16px;
                 color: #FFFFFF;
-                padding: 10px 50px;
+                padding: 10px 20px;
                 display: inline-block;
                 margin-bottom: 10px;
                 text-decoration: none;
@@ -53,8 +58,9 @@
                 border: 1px solid #e8e8e8;
                 border-radius: 4px;
                 padding-left: 10px;
-                right: 5px;
+                right: 0px;
                 position: absolute;
+                font-size: 16px;
 
                 &:active, &:focus {
                     outline: 0;
@@ -71,10 +77,61 @@
 
             svg{
                 position: absolute;
-                right: 15px;
+                right: 10px;
                 top: 50%;
                 transform: translateY(-80%);
             }
         }
+    }
+
+    .ListStudents{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+
+        .Table{
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: 1px solid #e8e8e8;
+            margin-left:auto; 
+            margin-right:auto;
+            table-layout: auto;
+            width: 100%;
+
+            th, td {
+                padding: 10px;
+                border: 1px solid #e8e8e8;
+            }
+
+            .Student{
+                color: black;
+    
+                img{
+                    width: 80px;
+                    border: 1px solid #e8e8e8;
+                }
+                
+                .Action{
+                    color: #ffffff;
+                    margin: 5px;
+                    border-radius: 4px;
+                    padding: 10px 15px;
+                    text-decoration: none;
+
+                    .icon{
+                        margin: 0px 5px;
+                    }
+                }
+
+                .Edit{
+                    background-color: #00aaff;
+                }
+
+                .Delete{
+                    background-color: #ff3300;
+                }
+            }
+        }
+
     }
 }
