@@ -1,5 +1,5 @@
 body{
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important; 
 }
 
 .StudentsPage{
@@ -26,7 +26,7 @@ body{
             align-items: flex-end;
 
             a {
-                background: #00aaff;
+                background: #3385ff;
                 border-radius: 4px;
                 font-size: 16px;
                 color: #FFFFFF;
@@ -88,6 +88,7 @@ body{
         text-align: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 10px;
 
         .Table{
             border-collapse: collapse;
@@ -115,7 +116,7 @@ body{
                     color: #ffffff;
                     margin: 5px;
                     border-radius: 4px;
-                    padding: 10px 15px;
+                    padding: 7px 15px;
                     text-decoration: none;
 
                     .icon{
@@ -124,7 +125,7 @@ body{
                 }
 
                 .Edit{
-                    background-color: #00aaff;
+                    background-color: #3385ff;
                 }
 
                 .Delete{
@@ -133,5 +134,47 @@ body{
             }
         }
 
+    }
+
+    .pagination{
+        justify-content: flex-end;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 13px;
+        text-align: center;
+        color: #2C3E50;
+
+        .page-item{
+            margin-left: 5px;
+
+            &.disabled {
+                opacity: 0.5;
+                cursor: auto;
+            }
+        }
+
+        .Break{
+            padding: 0 4px;
+
+            span {
+                padding: 11px 5px;
+                display: inline-flex;
+            }
+        }
+
+        .page-link{
+            background: #FFFFFF;
+            border: 1px solid #E8E8E8;
+            border-radius: 5px;
+            min-width: 40px;
+            color: #2C3E50;
+            padding: 11px 12px;
+
+            &:hover, &:active, &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
     }
 }

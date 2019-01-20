@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ListStutents from './listStudents';
 import HeadBar from './headBar'
+import Pagination from '../shared/pagination'
 
 const students = [
     {
@@ -12,7 +13,7 @@ const students = [
     {
         HoTen: "Nguyễn Hoàng Hải",
         QueQuan: "Hà Nội",
-        NgaySinh: "26/01/1997",
+        NgaySinh: "07/01/1997",
         Anh: "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-9/32293435_1578329408957031_1054780986497171456_n.jpg?_nc_cat=102&_nc_oc=AQlRbwhJPv5BaWoo0nmiTwtHKqXzsOyyLdbtrF3WL2k1cSbtLG-qwMX65hkP8gmsVnE&_nc_ht=scontent.fhan3-1.fna&oh=ff8c6977e210f488f5d21e16556f62aa&oe=5CFDCC07",
     },
     {
@@ -57,6 +58,7 @@ class StudentsPage extends Component{
                 <ListStutents 
                     students = {this.state.students} 
                 />
+                <Pagination />
             </div>
         )
     }
